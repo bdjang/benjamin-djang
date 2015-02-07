@@ -16,7 +16,7 @@ $pad: 20px;
 =====================================================================
 =====================================================================*/
 
-h1, h2, p, .archive span, .workImg aside {
+h1, h2, p, .archive span, .workImg aside, nav {
 	font-family: 'Lora', serif;
 }
 h1, h2, .workImg aside {
@@ -88,7 +88,8 @@ header, footer {
 header {
 	nav ul li {
 		float: right;
-		margin: 28px 0 0 $pad;
+		font-size: 12px;
+		margin: 28px 0 0 10px;
 	}
 }
 footer {
