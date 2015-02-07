@@ -1,0 +1,84 @@
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.grid {
+  margin: 0 0 $pad 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  /*padding-right: $pad;*/
+  .grid &:last-of-type {
+    padding-right: 0;
+  }
+  /*border: 1px solid red;*/
+}
+.col-12-12 {
+	width: 100%;
+}
+.col-11-12 {
+	width: 91.66%;
+}
+.col-10-12 {
+	width: 83.33%;
+}
+.col-9-12 {
+	width: 75%;
+}
+.col-8-12 {
+	width: 66.66%;
+} 
+.col-7-12 {
+	width: 58.33%;
+}
+.col-6-12 {
+	width: 50%;
+}
+.col-5-12 {
+	width: 41.66%;
+}
+.col-4-12 {
+	width: 33.33%;
+}
+.col-3-12 {
+	width: 25%;
+}
+.col-2-12 {
+	width: 16.66%;
+}
+.col-1-12 {
+	width: 8.33%;
+}
+/* Creates red border around grids */
+[class*='grid-pad'] {
+	/*border: 1px solid red;*/
+}
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+  &-top {
+  	padding: $pad 0 0 0;
+  }
+  &-right {
+    padding: 0 $pad 0 0;
+  }
+  &-bottom {
+    padding: 0 0 $pad 0;
+  }
+  &-left {
+    padding: 0 0 0 $pad;
+  }
+  &-none {
+    padding: 0;
+  }
+}

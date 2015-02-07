@@ -1,0 +1,281 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$pad: 20px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "reset",
+        "variables",
+        "grids"
+;
+
+/* TYPOGRAPHY
+=====================================================================
+=====================================================================*/
+
+h1, h2, p, .archive span, .workImg aside {
+	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+h1, h2, .workImg aside {
+	line-height: 1.3em;
+}
+h1 {
+	font-size: 42px;
+	margin: 20px 0;
+}
+h2 {
+	font-size: 28px;
+}
+p {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+/* GLOBAL
+=====================================================================
+=====================================================================*/
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid #cccccc;
+}
+
+a:link {
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+a:visited {
+	color: #ccc;
+}
+a:hover {
+	color: #f4f4f4;
+}
+a:active {
+	color: #c4c4c4;
+}
+
+/* HEADER + FOOTER
+=====================================================================
+=====================================================================*/
+
+.logo div {
+	font-family: helvetica;
+	font-size: 50px;
+	position: relative;
+	top: 10px;
+}
+
+img {
+	width: 100%;
+}
+
+.img-about {
+	text-align: center;
+	img {
+	margin: 0 $pad $pad 0;
+	max-width: 200px;
+	}
+}
+header, footer {
+	background-color: #9c0000;
+	color: #ffffff;
+}
+header {
+	nav ul li {
+		float: right;
+		margin: 28px 0 0 $pad;
+	}
+}
+footer {
+	margin-top: $pad;
+	p {
+		font-family: serif;
+		font-size: 14px;
+		line-height: 1.5em;
+	}
+	div img {
+		float: left;
+		margin: 0 10px 0 0;
+		width: 80px;
+	}
+}
+
+/* BODY
+=====================================================================
+=====================================================================*/
+
+
+/* CONTENT
+=====================================================================
+=====================================================================*/
+
+/********/
+/* BLOG */
+/********/
+
+.blogImg {
+	margin-bottom: $pad;
+}
+.blogStory {
+	p:nth-child(n+2) {
+		margin: $pad 8.33%; /* Added this code to accomodate post margins */
+	}
+	h1 {
+		margin: 30px 8.33%;
+	}
+}
+.disabled {
+	display: none;
+}
+
+/********/
+/* WORK */
+/********/
+
+.workImg {
+	h2 {
+		margin: 0 0 $pad 0;
+		text-align: center;
+	}
+	aside {
+		display: none;
+		margin: 0 0 $pad 0;
+	}
+}
+.workTitle {
+	h2 {
+		margin: 30px 0;
+	}
+}
+.workEffect {
+	display: inline-block;
+	max-width: 220px;
+	height: 220px;
+	margin: 0 0 $pad $pad;
+	overflow: hidden; // This code hides the paragraph outside the frame of the image and restricts the expanding image to it's width 
+	img {
+		-webkit-transition: opacity 1s, -webkit-transform 1s;
+		transition: opacity 1s, transform 1s;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		border: 1px solid #cccccc;
+	}
+	&:hover img {
+		opacity: 0.3;
+		-webkit-transform: scale3d(1.1,1.1,1);
+		transform: scale3d(1.1,1.1,1);
+	}
+	p {
+		-webkit-transition: opacity 0.35s, -webkit-transform .3s;
+		transition: opacity 0.35s, transform .3s;
+		-webkit-transform: translate3d(-290px, -150px, 0);
+		transform: translate3d(-290px, -150px, 0);
+		background-color: #9c0000;
+		color: #ffffff;
+		font-family: sans-serif;
+		margin: 5px;
+		text-align: center;
+		font-size: 16px;
+		&:nth-child(2) {
+			-webkit-transition-delay: 0.1s;
+			transition-delay: 0.1s;
+		}
+	}
+	&:hover p {
+		transform: translate3d(0, -150px, 0);
+	}
+}
+
+/*****************/
+/* SHOWCASE TEXT */
+/*****************/
+
+.showcaseText {
+	p {
+		margin-bottom: 30px;
+	}
+}
+.spaceMobile {
+	article:nth-child(2) img { /* This is targting the second child element within .spaceMobile and it HAS to be an article element for the CSS code to work */
+		border: 1px solid #cccccc;
+	}
+}
+.dpmobile {
+	text-align: center;
+	img {
+		border: none !important;
+		max-width: 400px;
+	}
+}
+/***********/
+/* ARCHIVE */
+/***********/
+
+.archive {
+	text-align: center;
+	li {
+		margin: $pad 0;
+	}
+	span {
+		font-size: 22px;
+	}
+}
+
+/* MEDIA QUERIES
+=====================================================================
+=====================================================================*/
+
+@media only screen and (max-width: 600px) {
+	/*[class*='col-'] {
+		width:100%;
+		padding:0;
+	}*/
+	h1 {
+		font-size: 34px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	.workImg {
+		aside {
+			display: block;
+		}
+		article {
+			text-align: center;
+			&:first-of-type {
+				/*margin: 0 10px 0 0;*/
+			}
+			&:last-of-type {
+				/*margin: 0 0 0 10px;*/
+			}
+			img {
+				width: 90%;
+			}
+			h2 {
+				margin: 0 0 10px 0;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
+	.workEffect {
+		height: auto;
+		margin: 0;
+	}
+	.spaceMobile article, .about article {
+		width: 83.33%;
+		&:nth-child(3) {
+			margin-top: $pad;
+		}
+		&:nth-child(3) {
+			margin-left: 8.33%;
+			padding: 0;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Iceland"
+date:   2015-01-20 21:19:03
+categories: jekyll update
+permalink: iceland
+---
+
+![Iceland](/img/iceland_mini.jpg)
+
+Iceland
+=======
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis rhoncus fringilla. Nulla vestibulum ac nisi eget porta. Phasellus in mollis leo. Pellentesque non ultrices diam. Phasellus commodo lectus in justo finibus iaculis.

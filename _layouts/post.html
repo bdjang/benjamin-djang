@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<!-- BLOG PHOTO -->
+<div class="grid blogStory">
+    
+    <article class="col-12-12"><!-- BLOG STORY -->
+      
+    	{{ content }}
+      {% for post in site.posts offset:1 limit:1 %}
+        <p><a href="{{ post.previous.url }}">Previous Story</a> | <a href="{{ post.next.url }}">Next Story</a></p>
+        {% endfor %}
+    </article>
+    
+</div>
