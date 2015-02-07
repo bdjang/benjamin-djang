@@ -16,7 +16,7 @@ $pad: 20px;
 =====================================================================
 =====================================================================*/
 
-h1, h2, p, .archive span, .workImg aside, nav {
+h1, h2, p, .archive span, .workImg aside {
 	font-family: 'Lora', serif;
 }
 h1, h2, .workImg aside {
@@ -32,6 +32,9 @@ h2 {
 p {
 	font-size: 18px;
 	line-height: 1.5em;
+}
+header nav ul li, aside {
+	font-size: 12px;
 }
 
 /* GLOBAL
@@ -88,7 +91,6 @@ header, footer {
 header {
 	nav ul li {
 		float: right;
-		font-size: 12px;
 		margin: 28px 0 0 10px;
 	}
 }
