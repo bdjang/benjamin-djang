@@ -48,15 +48,14 @@ hr {
 }
 
 a:link {
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 	transition: all 0.5s ease;
 }
 a:visited {
-	color: #ccc;
 }
 a:hover {
-	color: #f4f4f4;
+	color: #c4c4c4;
 }
 a:active {
 	color: #c4c4c4;
@@ -85,9 +84,12 @@ img {
 	}
 }
 header, footer {
-	background-color: #9c0000;
+	background-color: #151517;
 	color: #ffffff;
+	/*27282E
+	151517*/
 }
+
 header {
 	nav ul li {
 		float: right;
