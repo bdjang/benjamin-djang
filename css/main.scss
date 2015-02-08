@@ -48,15 +48,15 @@ hr {
 }
 
 a:link {
-	color: #ffffff;
+	color: #fff;
 	text-decoration: none;
 	transition: all 0.5s ease;
 }
 a:visited {
-	color: #ffffff;
+	color: #ccc;
 }
 a:hover {
-	color: #c4c4c4;
+	color: #f4f4f4;
 }
 a:active {
 	color: #c4c4c4;
@@ -85,10 +85,8 @@ img {
 	}
 }
 header, footer {
-	background-color: #151517;
+	background-color: #BF2828;
 	color: #ffffff;
-	/*27282E
-	151517*/
 }
 
 header {
