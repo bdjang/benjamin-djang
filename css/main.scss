@@ -140,8 +140,14 @@ footer {
 /* ABOUT */
 /*********/
 
-.about article p {
-	margin: 0 0 $pad 0;
+.about {
+	article p {
+		margin: 0 0 $pad 0;
+	}
+	svg {
+		width: 100px;
+		text-align: center;
+	}
 }
 
 /********/
