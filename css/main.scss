@@ -48,18 +48,18 @@ hr {
 }
 
 a:link {
-	color: #fff;
+	color: #2D4B82;
 	text-decoration: none;
-	/*transition: all 0.5s ease;*/
+	transition: all 0.5s ease;
 }
 a:visited {
-	color: #fff;
+	color: #627496;
 }
 a:hover {
-	color: #fff;
+	color: #869FCE;
 }
 a:active {
-	color: #fff;
+	color: #4877CE;
 }
 
 /* HEADER + FOOTER
@@ -85,7 +85,7 @@ img {
 	}
 }
 header, footer {
-	background-color: #9c0000;
+	background-color: #1C2D4F;
 	color: #fff;
 }
 
