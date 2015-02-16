@@ -16,7 +16,7 @@ $pad: 20px;
 =====================================================================
 =====================================================================*/
 
-h1, h2, p, .archive span, .workImg aside {
+h1, h2, p, .archive span, .workImg aside, .about ul li {
 	font-family: 'Lora', serif;
 }
 h1, h2, .workImg aside {
@@ -29,7 +29,7 @@ h1 {
 h2 {
 	font-size: 28px;
 }
-p {
+p, .about ul li {
 	font-size: 18px;
 	line-height: 1.5em;
 }
@@ -147,6 +147,10 @@ footer {
 	svg {
 		width: 100px;
 		text-align: center;
+	}
+	ul li {
+		float: left;
+		margin: 10px 10px 10px 0;
 	}
 }
 
