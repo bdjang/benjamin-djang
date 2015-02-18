@@ -24,7 +24,7 @@ h1, h2, .workImg aside {
 }
 h1 {
 	font-size: 42px;
-	margin: 20px 0;
+	margin: $pad 0;
 }
 h2 {
 	font-size: 28px;
@@ -129,7 +129,7 @@ footer {
 		margin: $pad 8.33%; /* Added this code to accomodate post margins */
 	}
 	h1 {
-		margin: 30px 8.33%;
+		margin: $pad 8.33%;
 	}
 }
 .disabled {
@@ -170,7 +170,7 @@ footer {
 }
 .workTitle {
 	h2 {
-		margin: 30px 0;
+		margin: $pad 0;
 	}
 }
 .workEffect {
@@ -251,7 +251,7 @@ footer {
 =====================================================================
 =====================================================================*/
 
-@media only screen and (max-width: 1162px) {
+@media only screen and (max-width: 1161px) {
 	.workEffect {
 		max-width: 180px;
 		height: 180px;
