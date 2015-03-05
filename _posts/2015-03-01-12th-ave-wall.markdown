@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "12th Avenue Wall"
+date:   2015-03-01 17:00:00
+categories: jekyll update
+permalink: 12th-avenue-wall
+---
+
+![12th Avenue Wall](/img/12th-ave-wall_mini.jpg)
+
+12th Avenue Wall
+================
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis rhoncus fringilla. Nulla vestibulum ac nisi eget porta. Phasellus in mollis leo. Pellentesque non ultrices diam. Phasellus commodo lectus in justo finibus iaculis.
