@@ -11,4 +11,4 @@ permalink: 12th-avenue-wall
 12th Avenue Wall
 ================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis rhoncus fringilla. Nulla vestibulum ac nisi eget porta. Phasellus in mollis leo. Pellentesque non ultrices diam. Phasellus commodo lectus in justo finibus iaculis.
+<a href="https://www.google.com/maps/place/40%C2%B049'17.4%22N+73%C2%B057'28.1%22W/@40.821506,-73.957808,19z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank">12th Avenue</a>

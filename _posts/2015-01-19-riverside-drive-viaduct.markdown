@@ -11,4 +11,4 @@ permalink: rdv
 Riverside Drive Viaduct
 =======================
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis rhoncus fringilla. Nulla vestibulum ac nisi eget porta. Phasellus in mollis leo. Pellentesque non ultrices diam. Phasellus commodo lectus in justo finibus iaculis. Thoughts: Write a blog post about what you learned from attending FOWD NYC - 2014 and An Event Apart - Washington DC 2014; write about what you learned from the Twitter Bootstrap workshop at FOWD. Include how you are using Jekyll to build this site as a result of attending a talk on static site generators at the FOWD conference.
+<a href="https://www.google.com/maps/place/40%C2%B049'15.4%22N+73%C2%B057'29.7%22W/@40.820933,-73.958247,19z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0" target="_blank">40°49'15.4"N 73°57'29.7"W</a>
