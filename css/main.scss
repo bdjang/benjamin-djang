@@ -170,6 +170,9 @@ footer {
 		display: none;
 		margin: 0 0 $pad 0;
 	}
+	article {
+		text-align: center; // Centers the web and HTML email projects on the Work page
+	}
 }
 .workTitle {
 	h2 {
