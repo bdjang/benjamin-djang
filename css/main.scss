@@ -88,23 +88,26 @@ img {
 	}
 }
 header, footer {
-	background-color: #1C2D4F;
-	color: #fff;
+	color: #ffffff;
 }
 
 header {
+	background-color: #ffffff;
+	border-bottom: 1px solid #000000;
 	nav ul li {
 		float: right;
 		margin: 28px 0 0 10px;
 	}
 }
 footer {
+	background-color: #1C2D4F;
 	margin-top: $pad;
 	p {
 		font-size: 12px;
 		line-height: 1.5em;
 	}
-	div img {
+	div img { /* Profile Image */
+		border-radius: 50%;
 		float: left;
 		margin: 0 10px 0 0;
 		width: 80px;
@@ -129,10 +132,10 @@ footer {
 }
 .blogStory {
 	p:nth-child(n+2) {
-		margin: $pad 8.33%; /* Added this code to accomodate post margins */
+		margin: $pad 0; /* Added this code to accomodate post margins */
 	}
 	h1 {
-		margin: $pad 8.33%;
+		margin: $pad 0;
 	}
 }
 .disabled {
@@ -297,10 +300,19 @@ footer {
 		width:100%;
 		padding:0;
 	}*/
+	.col-2-12 {
+		display: none;
+	}
+	.col-8-12 {
+		width: 100%;
+	}
 	h1 {
 		font-size: 34px;
 	}
-	.blogStory {
+	.blogStory article {
+		h1, p {
+			padding: 0 $pad;
+		}
 		h1 {
 			font-size: 26px;
 		}
