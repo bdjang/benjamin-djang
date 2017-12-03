@@ -13,7 +13,7 @@ The 2015 Email Design Conference
 
 The 2015 Email Design Conference was hosted by Litmus and was held at the Seaport World Trade Center in Boston and it featured two days of talks and workshops focused on email development and marketing. The conference brought together veterans of email development and marketing with 500 other email geeks across the country and the conference was very effective for me. The development talks I attended focused on best practices and maximizing efficiency with building emails and the potential future of email development in light of advances in CSS. In the keynote address the notion that email is still one of the most prevalent ways of communication was stated and reinforced but I would have appreciated it if the conference could have addressed potential changes that email might experience in the future as a result of other rising forms of communication (i.e. text messaging).
 
-Three New Ideas
+## Three New Ideas
 
 At the Advanced Targeting and Hacks Workshop, one idea I took away was the concept that email might be moving towards a more personalized, contextualized experience incorporating user data beyond what we have seen today. This includes time of day the email is open, location, email client, device, and even the current weather. Instead of sending a static email, these personalized emails will cater to the user on many different levels and will feature dynamic content.
 
