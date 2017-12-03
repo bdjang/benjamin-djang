@@ -5,7 +5,7 @@
 
 $pad: 20px;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
+/* Import partials from `sass_dir` (defaults to `_sass`) */
 @import
         "reset",
         "variables",
@@ -20,7 +20,7 @@ h1, h2, p, .archive span, .workImg aside, .about ul li {
 	font-family: 'Lora', serif;
 }
 h1, h2, .workImg aside {
-	line-height: 1.3em;
+	line-height: normal;
 }
 h1 {
 	font-size: 42px;
@@ -38,6 +38,7 @@ header nav ul li, aside {
 }
 header nav ul li {
 	font-family: sans-serif;
+	text-transform: uppercase;
 }
 
 /* GLOBAL
@@ -88,11 +89,11 @@ img {
 	}
 }
 header, footer {
+	background-color: #1C2D4F;
 	color: #ffffff;
 }
 
 header {
-	background-color: #ffffff;
 	border-bottom: 1px solid #000000;
 	nav ul li {
 		float: right;
@@ -100,7 +101,6 @@ header {
 	}
 }
 footer {
-	background-color: #1C2D4F;
 	margin-top: $pad;
 	p {
 		font-size: 12px;
@@ -131,11 +131,11 @@ footer {
 	margin-bottom: $pad;
 }
 .blogStory {
-	p:nth-child(n+2) {
-		margin: $pad 0; /* Added this code to accomodate post margins */
+	p:nth-child(1) { /* Removes padding for top blogStory image */
+		padding: 0;
 	}
-	h1 {
-		margin: $pad 0;
+	p:nth-child(n+2), h1, h2 {
+		margin: 20px 16.66%; /* Added this code to accomodate post margins */
 	}
 }
 .disabled {
@@ -174,7 +174,7 @@ footer {
 		margin: 0 0 $pad 0;
 	}
 	article {
-		text-align: center; // Centers the web and HTML email projects on the Work page
+		text-align: center; /* Centers the web and HTML email projects on the Work page */
 	}
 }
 .workTitle {
@@ -187,7 +187,7 @@ footer {
 	max-width: 220px;
 	height: 220px;
 	margin: 0 0 $pad $pad;
-	overflow: hidden; // This code hides the paragraph outside the frame of the image and restricts the expanding image to it's width 
+	overflow: hidden; /* This code hides the paragraph outside the frame of the image and restricts the expanding image to it's width */
 	img {
 		-webkit-transition: opacity 1s, -webkit-transform 1s;
 		transition: opacity 1s, transform 1s;
@@ -309,9 +309,12 @@ footer {
 	h1 {
 		font-size: 34px;
 	}
-	.blogStory article {
-		h1, p {
-			padding: 0 $pad;
+	header, footer {
+		padding: 0 $pad;
+	}
+	.blogStory  {
+		p:nth-child(n+2), h1, h2 {
+		margin: 20px; /* Added this code to accomodate post margins */
 		}
 		h1 {
 			font-size: 26px;
