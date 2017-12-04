@@ -34,7 +34,7 @@ p, .about ul li {
 	line-height: 1.5em;
 }
 header nav ul li, aside {
-	font-size: 12px;
+	font-size: 14px;
 }
 header nav ul li {
 	font-family: sans-serif;
@@ -247,15 +247,12 @@ footer {
 /***********/
 
 .archive {
-	text-align: center;
+	text-align: left;
 	li {
 		margin: $pad 0;
 	}
 	span {
 		font-size: 22px;
-	}
-	img {
-		width: 50%;
 	}
 }
 
