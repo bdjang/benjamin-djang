@@ -5,9 +5,9 @@ title: Archive
 
 <section class="grid">
           
-  <div class="col-1-12 grid-pad"></div>
+  <div class="col-2-12 grid-pad"></div>
   
-    <div class="col-10-12">
+    <div class="col-8-12">
 
 
       <ul class="archive">
@@ -18,12 +18,12 @@ title: Archive
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.excerpt }}</a>
+            <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.excerpt }}</a> -->
           </li>
         {% endfor %}
         </ul>
 
         
       </div>
-  <div class="col-1-12 grid-pad"></div>
+  <div class="col-2-12 grid-pad"></div>
 </section>
