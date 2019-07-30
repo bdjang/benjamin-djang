@@ -23,15 +23,14 @@ h1, h2, .workImg aside {
 	line-height: normal;
 }
 h1 {
-	font-size: 42px;
-	margin: $pad 0;
+	font-size: 36px;
 }
 h2 {
 	font-size: 28px;
 }
 p, .about ul li {
 	font-size: 18px;
-	line-height: 1.5em;
+	line-height: 1.7em;
 }
 header nav ul li, aside {
 	font-size: 14px;
@@ -135,7 +134,8 @@ footer {
 		padding: 0;
 	}
 	p:nth-child(n+2), h1, h2 {
-		margin: 20px 16.66%; /* Added this code to accomodate post margins */
+		max-width: 600px;
+		margin: $pad auto; /* Added this code to accomodate post margins */
 	}
 }
 .disabled {
