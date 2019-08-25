@@ -5,13 +5,13 @@ title: Archive
 
 <section class="grid">
           
-  <div class="col-2-12 grid-pad"></div>
+  <!-- <div class="col-2-12 grid-pad"></div> -->
   
-    <div class="col-8-12">
+    <div class="col-12-12">
 
-
-      <ul class="archive">
-      {% for post in site.posts %}
+      <article class="archive">
+        <ul>
+        {% for post in site.posts %}
           <li>
             <span>{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -22,8 +22,9 @@ title: Archive
           </li>
         {% endfor %}
         </ul>
+      </article>
 
         
       </div>
-  <div class="col-2-12 grid-pad"></div>
+  <!-- <div class="col-2-12 grid-pad"></div> -->
 </section>

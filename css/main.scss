@@ -12,6 +12,11 @@ $pad: 20px;
         "grids"
 ;
 
+html, html a {
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	-webkit-font-smoothing: antialiased;*/
+}
+
 /* TYPOGRAPHY
 =====================================================================
 =====================================================================*/
@@ -30,12 +35,13 @@ h2 {
 }
 p, .about ul li {
 	font-size: 18px;
-	line-height: 1.7em;
+	line-height: 1.6em;
+	-webkit-font-smoothing: antialiased;
 }
-header nav ul li, aside {
+header nav ul li, footer nav ul li, aside {
 	font-size: 14px;
 }
-header nav ul li {
+header nav ul li, footer nav ul li {
 	font-family: sans-serif;
 	text-transform: uppercase;
 }
@@ -83,8 +89,8 @@ img {
 .img-about {
 	text-align: center;
 	img {
-	margin: 0 $pad $pad 0;
-	max-width: 200px;
+		margin: 0 $pad $pad 0;
+		max-width: 200px;
 	}
 }
 header, footer {
@@ -92,14 +98,19 @@ header, footer {
 	color: #ffffff;
 }
 
-header {
-	border-bottom: 1px solid #000000;
+header, footer {
+	nav {
+		margin: 0 auto;
+		max-width: 600px;
+	}
 	nav ul li {
-		float: right;
-		margin: 28px 0 0 10px;
+		float: left;
+		letter-spacing: 0.5px;
+		padding: 15px 30px 14px 0;
 	}
 }
 footer {
+	border-top: 5px solid #768195;
 	margin-top: $pad;
 	p {
 		font-size: 12px;
@@ -136,6 +147,9 @@ footer {
 	p:nth-child(n+2), h1, h2 {
 		max-width: 600px;
 		margin: $pad auto; /* Added this code to accomodate post margins */
+	}
+	p:last-child {
+		text-align: center; /* Centers 'Previous | Next' text */
 	}
 }
 .disabled {
@@ -247,6 +261,8 @@ footer {
 /***********/
 
 .archive {
+	margin: 0 auto;
+	max-width: 600px;
 	text-align: left;
 	li {
 		margin: $pad 0;
@@ -317,11 +333,15 @@ footer {
 			font-size: 26px;
 		}
 		p {
-			font-size: 16px;
+			font-size: 18px;
+			line-height: 1.5em;
 		}
 	}
 	h2 {
-		font-size: 20px;
+		font-size: 22px;
+	}
+	.highlight {
+		width: 100%;
 	}
 	.workImg {
 		aside {
