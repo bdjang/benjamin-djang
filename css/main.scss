@@ -148,9 +148,6 @@ footer {
 		max-width: 600px;
 		margin: $pad auto; /* Added this code to accomodate post margins */
 	}
-	p:last-child {
-		text-align: center; /* Centers 'Previous | Next' text */
-	}
 }
 .disabled {
 	display: none;
