@@ -1,7 +1,7 @@
 # Personal Website
 
-* [Jekyll](https://jekyllrb.com/)
-* [GitHub Pages](https://pages.github.com/)
+* [Jekyll - a static site generator](https://jekyllrb.com/)
+* [GitHub Pages - a static site hosting service](https://pages.github.com/)
 
 ## Background
 
