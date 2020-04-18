@@ -7,9 +7,9 @@ $pad: 20px;
 
 /* Import partials from `sass_dir` (defaults to `_sass`) */
 @import
-        "reset",
-        "variables",
-        "grids"
+	"reset",
+	"variables",
+	"grids"
 ;
 
 html, html a {
@@ -110,7 +110,6 @@ header, footer {
 	}
 }
 footer {
-	border-top: 5px solid #768195;
 	margin-top: $pad;
 	p {
 		font-size: 12px;
@@ -141,13 +140,18 @@ footer {
 	margin-bottom: $pad;
 }
 .blogStory {
-	p:nth-child(1) { /* Removes padding for top blogStory image */
-		padding: 0;
+	p:nth-child(1) { /* Styles for top blogStory image */
+		padding: 20px 0 0 0;
+		margin: 0 auto;
+		max-width: 900px;
 	}
 	p:nth-child(n+2), h1, h2 {
-		max-width: 600px;
+		max-width: 700px;
 		margin: $pad auto; /* Added this code to accomodate post margins */
 	}
+}
+.highlight {
+	width: 700px;
 }
 .disabled {
 	display: none;

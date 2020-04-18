@@ -3,7 +3,7 @@ layout: post
 title:  "The Email Design Conference - 2015"
 date:   2015-09-07 16:00:00
 categories: jekyll update
-permalink: tedc15
+permalink: a1
 ---
 
 ![The Email Design Conference - 2015](/img/tedc15_mini.jpg)
